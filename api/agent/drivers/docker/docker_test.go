@@ -35,6 +35,7 @@ func (f *taskDockerTest) Volumes() [][2]string                    { return [][2]
 func (f *taskDockerTest) Memory() uint64                          { return 256 * 1024 * 1024 }
 func (f *taskDockerTest) CPUs() uint64                            { return 0 }
 func (f *taskDockerTest) FsSize() uint64                          { return 0 }
+func (f *taskDockerTest) PIDs() uint64                            { return 0 }
 func (f *taskDockerTest) TmpFsSize() uint64                       { return 0 }
 func (f *taskDockerTest) WorkDir() string                         { return "" }
 func (f *taskDockerTest) Close()                                  {}
